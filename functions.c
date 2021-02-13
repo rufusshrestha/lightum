@@ -83,8 +83,8 @@ int get_screen_backlight_value() {
 	int fd, actual_backlight, max_backlight;
 	char buf[5];
 	struct stat tmp;
-	const char *scr_backlight="/sys/class/backlight/intel_backlight/actual_brightness";
-	const char *scr_maxbacklight="/sys/class/backlight/intel_backlight/max_brightness";
+	const char *scr_backlight="/sys/class/backlight/gmux_backlight/actual_brightness";
+	const char *scr_maxbacklight="/sys/class/backlight/gmux_backlight/max_brightness";
 	ssize_t cnt;
     int ret=0, backlight=15;
 
